@@ -102,7 +102,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## Contact
 
-If you have any questions, suggestions, or issues, please create an issue in this repository or contact the maintainer.
+If you have any questions, suggestions, or issues, please create an issue in this repository or contact the me seo.aijaz@gmail.com.
 
 ---
 
