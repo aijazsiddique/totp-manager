@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TOTP Manager</title>
+  <link rel="stylesheet" href="popup.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Optional: Add Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>TOTP Manager</h1>
+    
+    <div id="accounts-container">
+      <!-- TOTP accounts will be listed here -->
+      <div class="loading">Loading your accounts...</div>
+    </div>
+    
+    <div class="controls">
+      <button id="add-account-btn">Add New Account</button>
+    </div>
+    
+    <div id="add-account-form" class="hidden">
+      <h2>Add New Account</h2>
+      <div class="form-group">
+        <label for="account-name">Account Name:</label>
+        <input type="text" id="account-name" placeholder="e.g. Google, GitHub">
+      </div>
+      <div class="form-group">
+        <label for="totp-secret">TOTP Secret:</label>
+        <input type="text" id="totp-secret" placeholder="Enter TOTP secret key">
+      </div>
+      <div class="form-buttons">
+        <button id="cancel-account-btn">Cancel</button>
+        <button id="save-account-btn">Save</button>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <span id="status-message"></span>
+      <div class="attribution">
+        <a href="https://github.com/aijazsiddique/AlgoTrade" target="_blank">By AlgoTrade</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Load TOTP libraries first -->
+  <script src="lib/jsotp.js"></script>
+  <script src="lib/totp.js"></script>
+  <!-- Then load the popup script -->
+  <script src="popup.js"></script>
+</body>
+</html>
