@@ -3,7 +3,7 @@
 A simple, lightweight Chrome extension for managing Time-based One-Time Password (TOTP) codes for two-factor authentication.
 
 ![TOTP Manager Screenshot](screenshots/screenshot2.png)
-![TOTP Manager Screenshot](screenshots/screenshot1.png)
+![TOTP Manager Screenshot](screenshots/screenshot.png)
 
 ## Features
 
